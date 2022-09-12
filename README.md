@@ -13,13 +13,25 @@ This script helps you generate a timelapse showing the progress Stable Diffusion
 
 ## usage
 
-Ensure the SD model is in the parent directory to this script, i.e. `../stable-diffusion-v1-4/` should exist from the directory you run the script in.
+Ensure the SD model is in the parent directory to this script, i.e. `../stable-diffusion-v1-4/` should exist from the directory you run the script in. For example:
+
+```
+Desktop/
+├─ diffusion-animation/
+│  ├─ animate.py
+├─ stable-diffusion-v1-4/
+│  ├─ model_info.json
+│  ├─ ...
+```
+
+Execute
 
 > python animate.py "astronaut riding a horse" 1234 50 test
 
 The script will place files named `text-{x}.png` in the `./output` directory, where `{x}` is the step number associated with the image.
 
+Until video output is working, please use an image-to-video stitching utility to make timelapse videos.
+
 ## roadmap
 
- * video output
- * gif output
+ * video/gif output
