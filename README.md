@@ -26,7 +26,7 @@ Desktop/
 
 Execute
 
-> python animate.py "astronaut riding a horse" 1234 50 test
+> python animate.py "<prompt>" <seed> <steps> <filename>
 
 The script will place files named `text-{x}.png` in the `./output` directory, where `{x}` is the step number associated with the image.
 
